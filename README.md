@@ -1,35 +1,30 @@
 # BI Portfolio
 
-SQL-based analytics projects focused on business questions, data modeling, and KPI definition.
+SQL-based projects focused on understanding business data and how different parts of a system affect each other.
+
+This repository includes analysis of revenue, customers, cash flow, and operational performance using SQL.
 
 ---
 
 ## Projects
 
 ### 01 — Repeat Customer Revenue Analysis
+Looks at how repeat customers contribute to revenue and whether their spending is concentrated in a small number of products.
 
-Analysis of how revenue is distributed across repeat customers and whether it is concentrated in specific products.
-
-Folder: `01_repeat_customer_analysis/`
+Folder: 01_repeat_customer_analysis/
 
 ---
 
 ### 02 — Cash Flow vs Revenue Analysis
+Compares revenue and cash flow over time to understand how sales and payments can happen at different moments.
 
-Comparison between revenue and actual cash inflows over time to understand timing gaps between sales and payments.
-
-Folder: `02_cash_flow_vs_revenue/`
-
----
-
-## Tools Used
-
-- SQL
-- Data modeling concepts (fact tables, dimensions, grain)
-- Basic analytical thinking for business metrics
+Folder: 02_cash_flow_vs_revenue/
 
 ---
 
-## Focus
+### 03 — Operational Performance & Supply Chain Analysis (In Progress)
+Focuses on production delays, supplier performance, inventory pressure, and how they affect operational efficiency.
 
-This repository is focused on building clear, structured SQL analysis projects that reflect real BI workflows.
+Folder: 03_operational_analytics/
+
+---
