@@ -1,6 +1,6 @@
 # BI Portfolio
 
-SQL-based projects focused on understanding business data and how different parts of a system affect each other.
+SQL-based projects exploring business data and how different parts of a system interact.
 
 This repository includes analysis of revenue, customers, cash flow, and operational performance using SQL.
 
@@ -22,7 +22,7 @@ Folder: 02_cash_flow_vs_revenue/
 
 ---
 
-### 03 — Operational Performance & Supply Chain Analysis (In Progress)
+### 03 — Operational Performance & Supply Chain Analysis
 Focuses on production delays, supplier performance, inventory pressure, and how they affect operational efficiency.
 
 Folder: 03_operational_analytics/
