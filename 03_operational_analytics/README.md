@@ -1,10 +1,10 @@
-# Operational Analytics 
+# Operational Analytics – Manufacturing Performance Dashboard
 
 ## Overview
 
-This project analyzes production delays within a manufacturing operation to better understand the factors associated with operational performance.
+This project analyzes production performance in a manufacturing environment, with a focus on understanding operational delays and their potential drivers.
 
-The analysis explores whether delays are linked to supplier quality, product mix, inventory conditions, or broader seasonal patterns.
+The analysis investigates whether production delays are influenced by supplier quality, product mix, inventory levels, or seasonal effects.
 
 ---
 
@@ -18,63 +18,68 @@ What factors are associated with production delays in the manufacturing process?
 
 The analysis uses the following tables:
 
-- production_orders
-- suppliers
-- products
-- defects
-- inventory_balance
+- production_orders  
+- suppliers  
+- products  
+- defects  
+- inventory_balance  
 
-A supporting inventory model was created to simulate seasonal inventory pressure through dynamic reorder thresholds.
+A supporting inventory model was created to simulate seasonal fluctuations and reorder thresholds.
 
 ---
 
 ## Approach
 
-The analysis investigates production delays from multiple perspectives:
+The analysis was conducted using SQL and Power BI and explores operational performance from multiple perspectives:
 
-1. Delay trends over time  
-2. Supplier-level delay patterns  
-3. Product-level delay patterns  
-4. Supplier defect rates  
-5. Inventory position by month  
-6. Relationship between inventory pressure and production delays  
+- Production delay trends over time  
+- Supplier-level delay patterns  
+- Product-level performance variation  
+- Supplier defect rates  
+- Monthly inventory levels  
+- Relationship between inventory pressure and production delays  
 
-Each question is explored through SQL-based analysis and documented in `business_analysis.sql`.
+All SQL logic is documented in `business_analysis.sql`.
 
 ---
 
 ## Key Findings
 
-### Production delays are seasonal
+### 1. Production delays show clear seasonality
+Delays do not follow a consistent upward or downward trend over time. Instead, they tend to increase during summer months across both years of data.
 
-Average production delays do not show a clear upward trend over time. Instead, delays tend to increase during summer months across both years of data.
+---
 
-### Products are not a major driver of delays
+### 2. Product mix is not a major driver of delays
+Delay performance is relatively consistent across products, suggesting that product type is not a key factor in operational variation.
 
-Average delay levels are relatively similar across products, suggesting that product type alone does not explain operational performance differences.
+---
 
-### Supplier quality varies significantly
+### 3. Supplier quality varies significantly
+Frontier Supply shows a notably higher defect rate compared to other suppliers, indicating a potential source of operational risk.
 
-Frontier Supply exhibits a substantially higher defect rate than the other suppliers. This suggests supplier quality may contribute to production disruptions and operational risk.
+---
 
-### Inventory remains generally healthy
+### 4. Inventory levels remain generally stable
+Inventory stays above reorder thresholds throughout the period. While margins tighten during summer months, inventory shortages do not appear to be a primary constraint.
 
-Inventory levels remain above reorder thresholds throughout the observed period. While inventory gaps narrow during summer months, inventory does not appear to be a primary constraint.
+---
 
-### Inventory pressure may contribute to delays
-
-Months with lower inventory gaps often coincide with higher production delays. However, this relationship is not consistent enough to conclude that inventory is the main driver of delays.
+### 5. Inventory pressure shows a weak relationship with delays
+Periods of lower inventory buffer sometimes coincide with higher delays, but the relationship is not consistent enough to suggest a strong dependency.
 
 ---
 
 ## Conclusion
 
-The analysis suggests that production delays are primarily seasonal in nature. Supplier quality differences, particularly the elevated defect rate associated with Frontier Supply, appear to be a more significant operational concern than product mix or inventory shortages.
+The analysis suggests that production delays are primarily driven by seasonal operational patterns rather than structural issues in inventory management or product mix.
 
-Overall, the findings indicate that seasonal operational pressure and supplier quality are more closely associated with production delays than inventory constraints alone.
+Supplier quality differences—particularly the elevated defect rate from Frontier Supply—represent a more meaningful operational risk factor.
+
+Overall, seasonal demand pressure and supplier variability appear more influential on delays than inventory constraints alone.
 
 ---
 
-## SQL
+## SQL Analysis
 
-All analysis queries and observations are documented in `business_analysis.sql`.
+All transformations, calculations, and analytical queries are documented in `business_analysis.sql`.
