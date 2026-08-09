@@ -1,4 +1,4 @@
-# Sales Performance – Commercial Analytics Dashboard
+# Sales Performance – Analytics Dashboard
 
 ## Overview
 
