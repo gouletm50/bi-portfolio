@@ -1,8 +1,8 @@
 # BI Portfolio
 
-SQL-based projects exploring business data and how different parts of a system interact.
+SQL and Power BI projects exploring business data, analytical workflows, and how different parts of a business system interact.
 
-This repository includes analysis of revenue, customers, cash flow, and operational performance using SQL.
+This repository includes projects covering revenue, customers, cash flow, sales performance, and operational performance.
 
 ---
 
@@ -28,3 +28,11 @@ Focuses on production delays, supplier performance, inventory pressure, and how 
 Folder: 03_operational_analytics/
 
 ---
+
+### 04 — Sales Performance Analytics
+
+Builds a sales analytics warehouse and Power BI dashboard to analyze revenue performance across territories, products, customers, and sales representatives.
+
+The project also includes a detailed investigation into the factors contributing to the April 2025 revenue decline compared with April 2024.
+
+Folder: 04_sales_performance/
