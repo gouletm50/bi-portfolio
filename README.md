@@ -29,7 +29,7 @@ Folder: 03_operational_analytics/
 
 ---
 
-### 04 — Sales Performance Analytics
+### 04 — Sales Performance Analysis
 
 Builds a sales analytics warehouse and Power BI dashboard to analyze revenue performance across territories, products, customers, and sales representatives.
 
